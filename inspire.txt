@@ -1,0 +1,70 @@
+Inspire Talk - 10 min.
+
+Title:
+
+Verified Logic Circuit Simulation via TLA+ and Logic Programming.
+
+Introduction:
+
+This talk presents an update on the speaker's personal research into
+reconfigurable hardware, and the lessons learned therefrom. Using
+Lamport's Temporal Logic of Actions (TLA+) as a specification
+language, and miniKanren (a Scheme logic programming EDSL) as a model
+checker for TLA+ terms, the formal semantics of an exotic logic
+circuit element (universal, reversible, reconfigurable, and
+asynchronous) were codified, and the behavior of a software simulator
+for said logic element verified. With this use-case as an example, an
+overview of the process and benefits of translating informal
+requirements into mathematical specifications, thence to
+executable code, are demonstrated.
+
+Takeaway:
+
+The costs of formally specifying and verifying programs are outweighed
+by their improved clarity and correctness.
+
+Inspiration:
+
+With the correct paradigm, code complication can be computationally
+compartmentalized.
+
+Entertainment:
+
+Ideally, the audience will be pleasantly surprised at how fast an
+apparently large (yet finite) search space can be exhausted of error,
+given the correct queries.
+
+Relevancy:
+
+TLA+ is an academically and industrially recognized, actively
+maintained tool for the specification of asynchronous, concurrent, and
+distributed programs.
+
+Benefits:
+
+Those unfamiliar with the techniques of TLA+ program specification
+will receive an introduction to the tool and its use.
+
+Outline:
+
+0. Salutation (30 sec.)
+
+1. Present the "hard problem" of verifying a high-level hardware
+circuit simulator behaves as expected. (2 min.)
+
+2. Identify desired invariants, show encoding in TLA+ and their
+translation to miniKanren. (5 min.)
+
+3. Reveal the "hard problem" to be soluble through clear specification
+and automated model checking, which TLA+ and logic programming
+provide, respectively. (2 min.)
+
+4. Valediction, references. (30 sec.)
+
+Pitch:
+
+Learn how logic shrinks problem spaces.
+
+Code sample languages:
+
+miniKanren, Scheme, TLA+
