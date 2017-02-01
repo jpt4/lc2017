@@ -1,0 +1,104 @@
+De Novo Session - 1 hour
+
+Title:
+
+Formally Specified Digital Logic for Pervasively Reconfigurable Computing
+
+Introduction:
+
+Pervasiviely Reconfigurable Computing is a project to design
+reflectively reconfigurable software across the entire computing
+stack, from the hardware level up. The Universal Cell is a proposed
+digital logic circuit element that supports 1) reversible 2)
+asynchronous 3) homogeneously reconfigurable behavior within a single
+primitive component. A formal specification of the abstract transition
+system that the UC embodies is given using Lamport's Temporal Logic of
+Actions (TLA+), and a simulation of the hardware verified by
+translating TLA+ terms into miniKanren, a Scheme logic programming
+EDSL.
+
+Novelty:
+
+The Universal Cell a single digital logic circuit element that, though
+relatively primitive, supports reversible, asynchronous, and
+reconfigurable computation in the style of PRC. A full formal model
+and simulation is presented here for the first time.
+
+Competition:
+
+Reconfigurable Asynchronous Logic Automata [0] addresses the question
+of homogeneously reconfigurable, asynchronous hardware for digital
+logic. Reversible reconfigurable hardware, e.g. in the form of
+Programmable Logic Arrays [1], or cellular automata [2], have been
+studied. Hardware specification, verification, and synthesis targeting
+reconfigurable hardware, such as ClaSH [3], are far more mature than
+the TLA+ approach described in this presentation.
+
+[0] http://rala.cba.mit.edu/
+
+[1] https://arxiv.org/abs/1204.5407
+
+[2] https://arxiv.org/abs/1006.2822
+
+[3] http://www.clash-lang.org/
+
+Differentiation:
+
+To the best knowledge of the speaker, PRC is the only active research
+project investigating 1) reversible; 2) asynchronous; 3) homogeneous;
+4) primitive, digital logic elements for the purpose of supporting
+reflectively reconfigurable programs [0]. The formal specification and
+verification of the Universal Cell is thus novel, if only by virtue of
+hyper-specificity.
+
+[0] References to similar work would be greatly appreciated.
+
+Relevancy:
+
+The formal specification tool TLA+ is used in industry and academia to
+model concurrent, asynchronous, and distributed systems. The abstract
+transition system discussed in this work employs TLA+ as the formal
+modelling language.
+
+Benefits:
+
+Developers unaware of the process of formal specification and
+verification will be introduced to these concepts in the context of a
+concrete use-case of TLA+ to specify an abstract transition system.
+
+Concepts:
+
+Reversible and asynchronous digital logic; abstract transition systems
+(as per the temporal logic of actions); logic programming.
+
+Skills:
+
+1. How to read TLA+ source.
+
+2. Writing programs in the logic programming paradigm.
+
+Outline:
+
+1. Salutation
+
+2. Introduction of PRC/Universal Cell; informally state desired properties
+
+3. Translation of properties into an abstract transition machine
+
+4. Formal specification of the abstract transition machine in TLA+
+
+5. Encoding TLA+ terms in miniKanren
+
+6. Demonstration of Universal Cell simulator
+
+7. Valediction and references
+
+8. Questions, if time available
+
+Pitch:
+
+Watch as strange and speculative hardware is tamed with math and
+functional programming.
+
+Languages:
+miniKanren, Scheme, TLA+
